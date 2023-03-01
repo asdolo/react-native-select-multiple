@@ -65,7 +65,7 @@ export default class SelectMultiple extends Component {
     this.setState({ dataSource: rows })
   }
 
-  componentWillReceiveProps (nextProps) {
+  UNSAFE_componentWillReceiveProps (nextProps) {
     const rows = this.getRowData(nextProps)
     this.setState({ dataSource: rows })
   }
